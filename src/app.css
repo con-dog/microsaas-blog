@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'Merriweather Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/Merriweather_Sans/MerriweatherSans-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
+}
+
+body {
+	@apply flex flex-col items-center min-h-screen;
+	@apply text-[#2f2f2f] bg-[#f9f7f1];
+}
+
+nav {
+	@apply text-2xl sm:text-3xl lg:text-4xl;
+	@apply flex gap-10 p-8 font-semibold underline;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	@apply font-bold uppercase text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center;
+	@apply mt-4 mb-6 sm:mt-6 sm:mb-6 md:mt-12 md:mb-12 lg:mt-16 lg:mb-16;
+}
+
+div {
+	@apply w-full flex flex-col items-center gap-2 justify-center;
+}
+
+article {
+	font-family: 'Merriweather Sans', sans-serif;
+	@apply first-letter:float-left first-letter:mr-4 first-letter:text-7xl first-letter:text-black first-letter:font-bold;
+	@apply max-w-[70ch] text-base text-justify p-4 sm:p-8 md:p-12 lg:p-16;
+}
+
+p {
+	@apply p-2;
+}
